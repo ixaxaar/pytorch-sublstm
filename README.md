@@ -1,6 +1,6 @@
 # Differentiable Neural Computer, for Pytorch
 
-[![Build Status](https://travis-ci.org/ixaxaar/pytorch-sublstm.svg?branch=master)](https://travis-ci.org/ixaxaar/pytorch-sublstm) [![PyPI version](https://badge.fury.io/py/sublstm.svg)](https://badge.fury.io/py/sublstm)
+[![Build Status](https://travis-ci.org/ixaxaar/pytorch-sublstm.svg?branch=master)](https://travis-ci.org/ixaxaar/pytorch-sublstm) [![PyPI version](https://badge.fury.io/py/pytorch-sublstm.svg)](https://badge.fury.io/py/pytorch-sublstm)
 
 This is an implementation of subLSTM described in the paper [Cortical microcircuits as gated-recurrent neural networks, Rui Ponte Costa et al.](https://arxiv.org/abs/1711.02448)
 
