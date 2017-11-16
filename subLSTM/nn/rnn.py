@@ -129,6 +129,7 @@ class SubLSTM(Module):
 
     output = T.stack([T.stack(o, 1) for o in os])
     output = T.cat(output, -1) if self.bidirectional else output[0]
+    output = output if self.batch_first else output.transpose(0, 1)
 
     if is_packed:
       output = pack(output, batch_sizes)

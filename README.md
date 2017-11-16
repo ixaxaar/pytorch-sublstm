@@ -1,4 +1,4 @@
-# subtractive LSTM (subLSTM), for Pytorch  - under development
+# subtractive LSTM (subLSTM), for Pytorch
 
 [![Build Status](https://travis-ci.org/ixaxaar/pytorch-sublstm.svg?branch=master)](https://travis-ci.org/ixaxaar/pytorch-sublstm) [![PyPI version](https://badge.fury.io/py/pytorch-sublstm.svg)](https://badge.fury.io/py/pytorch-sublstm)
 
@@ -71,6 +71,12 @@ input = Variable(torch.randn(batch_size, input_size))
 cell = SubLSTMCell(input_size, hidden_size, bias=True)
 (hx, cx) = cell(input, (hx, cx))
 ```
+
+### Tasks:
+
+A language modeling task is included [here](./tasks/word_language_model/).
+Refer to its [README](./tasks/word_language_model/README.md) for more info.
+
 
 ### Attributions:
 

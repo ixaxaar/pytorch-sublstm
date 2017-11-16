@@ -14,10 +14,10 @@ def SubLSTMCell(input, hidden, w_ih, w_hh, b_ih=None, b_hh=None):
 
   ingate = F.sigmoid(ingate)
   forgetgate = F.sigmoid(forgetgate)
-  cellgate = F.tanh(cellgate)
+  cellgate = F.sigmoid(cellgate)
   outgate = F.sigmoid(outgate)
 
-  cy = (forgetgate * cx) + (ingate * cellgate)
-  hy = outgate * F.tanh(cy)
+  cy = (forgetgate * cx) + (cellgate - ingate)
+  hy = F.sigmoid(cy) - outgate
 
   return hy, cy

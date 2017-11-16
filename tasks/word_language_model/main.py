@@ -25,7 +25,7 @@ parser.add_argument('--lr', type=float, default=0.0001,
           help='initial learning rate')
 parser.add_argument('--clip', type=float, default=0.25,
           help='gradient clipping')
-parser.add_argument('-optim', type=str, default='rmsprop',
+parser.add_argument('--optim', type=str, default='rmsprop',
           help='learning rule, supports adam|sparseadam|adamax|rmsprop|sgd|adagrad|adadelta')
 parser.add_argument('--epochs', type=int, default=40,
           help='upper epoch limit')
@@ -33,7 +33,7 @@ parser.add_argument('--batch_size', type=int, default=20, metavar='N',
           help='batch size')
 parser.add_argument('--bptt', type=int, default=35,
           help='sequence length')
-parser.add_argument('--dropout', type=float, default=0.2,
+parser.add_argument('--dropout', type=float, default=0.5,
           help='dropout applied to layers (0 = no dropout)')
 parser.add_argument('--tied', action='store_true',
           help='tie the word embedding and softmax weights')
