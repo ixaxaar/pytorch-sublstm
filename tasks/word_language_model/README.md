@@ -1,4 +1,4 @@
-# Word-level language modeling RNN - under development
+# Word-level language modeling RNN
 
 This example trains a multi-layer RNN (Elman, GRU, LSTM or subLSTM) on a language modeling task.
 By default, the training script uses the PTB dataset, provided.

@@ -1,4 +1,4 @@
-# subtractive LSTM (subLSTM), for Pytorch
+# subtractive LSTM (subLSTM), for Pytorch  - under development
 
 [![Build Status](https://travis-ci.org/ixaxaar/pytorch-sublstm.svg?branch=master)](https://travis-ci.org/ixaxaar/pytorch-sublstm) [![PyPI version](https://badge.fury.io/py/pytorch-sublstm.svg)](https://badge.fury.io/py/pytorch-sublstm)
 
